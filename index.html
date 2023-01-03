@@ -1,0 +1,262 @@
+<html>
+
+<head>
+	<title>Creá tu firma</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="icons/favicon.ico" type="image/x-icon">
+	<link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="js/jquery-1.8.2.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js" type="text/javascript"></script>
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript">
+		$("#copy").click(function () {
+			$("#div2").html($("#div1").html());
+		});
+	</script>
+	
+	<script src="js/Clipboard.js"></script>
+	<script src="js/script.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$("#copy1").click(function () {
+				var data = $("#div2").html();
+				$("#abc_data1").text(data);
+			});
+			$("#uploadimg").click(function () {
+				$('#message1').html('upload image');
+			});
+		});
+	</script>
+
+</head>
+
+<body>
+	<nav class="navbar navbar-default" id="header">
+		<div class="container">
+			<div class="navbar-header">
+				<img src="veritran-logo.png" alt="veritran.com" style="width: 200px; margin-top: 10px;">
+			</div>
+		</div>
+	</nav>
+	<div id="wholecont">
+		<div id="main">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h3>Creá tu firma</h3>
+						<p style="margin: 5px 0; font-size: 16px;">Ingresá tus datos y agregala en tu Outlook.</p>
+						<p style="font-style: italic;">Todos los datos son obligatorios.</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<div id="div1">
+							<h4 style="padding-bottom: 5px">PASO 1: Ingresá tus datos para crear tu firma</h4>
+							<div class="row">
+								<form action="" style="border:none;">
+									<table class="uinfo">
+										<div class="row">
+											<tr>
+												<div class="col-md-6">
+													<td>
+														<label><strong>Tit. - Nombre y Apellido</strong></label>
+														<input type="text" name="username"
+															placeholder="ej: Marcelo Gonzalez"
+															onkeyUp="escribirLabel('username1',this.value)" />
+													</td>
+												</div>
+												<div class="col-md-6">
+													<td>
+														<label><strong>Cargo (puesto)</strong></label>
+														<input type="text" id="puesto-label" name="puesto"
+															placeholder="ej: CEO"
+															onkeyUp="escribirPuesto(this.value)" />
+													</td>
+												</div>
+											</tr>
+										</div>
+										<div class="row">
+											<tr>
+												<div class="col-md-12">
+													<td>
+														<label><strong>Telefono/s</strong></label>
+														<input id="domicilio" type="text" name="domicilio"
+															placeholder="ej: +5491151231234"
+															onKeyup="escribirTelefono('telefono1', this.value)">
+													</td>
+												</div>
+												<div class="col-md-12">
+													<td>
+														<label><strong>Correo (mail)</strong></label>
+														<input id="localidad" type="text" name="localidad"
+															placeholder="ej: nombre@veritran.com"
+															onkeyup="escribirMail(this.value)">
+													</td>
+												</div>
+											</tr>
+										</div>
+									</table>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div id="div2">
+							<p style="margin-left: 30px auto; margin-top: 10px;">Así quedaría tu firma:</p>
+							<div style="border: 1px solid gray ; border-radius: 4px; padding: 10px;">
+								<table class="uinfo" id="firma">
+									<tbody>
+										<tr valign="top">
+											<td class="logo" style="vertical-align: middle;  ">
+												<img id="Image-Maps-Com-image-maps-2018-07-23-120406"
+													src="./sources/veritran.gif" />
+												<img id="Image-Maps-Com-image-maps-2018-07-23-120406"
+													src="./sources/gptw-2.png" />
+											</td>
+										</tr>
+										<tr>
+											<td class="contacto">
+												<div id="data">
+													<br />
+													<div
+														style="font-weight: bold; color:#344050;font-size:8pt;font-family:Century Gothic,sans-serif;">
+														<span lang="en-US" id="username1"></span>
+														<span id="puesto1"></span>
+													</div>
+
+													<diV>
+														<a id="a-localidad1" href="mailto:gcarnaghi@veritran.com"
+															target="_blank" rel="noopener noreferrer"
+															data-auth="NotApplicable" data-linkindex="3"
+															data-loopstyle="link" data-safelink="true"
+															style="color:blue;text-decoration:underline; font-size:8pt;font-family:Century Gothic,sans-serif;">
+															<span id="localidad1"
+																style="color:#2F5597;"></span>
+														</a>
+													</diV>
+
+													<div>
+														<span id="telefono1" lang="en-US"
+															style="color:#17375E;font-size:8pt;font-family:Century Gothic,sans-serif;">
+														</span>
+													</div>
+													<div>
+														<span
+															style="color:black;font-size:8pt;font-family:Century Gothic,sans-serif;">
+															<a href="http://www.veritran.com/" target="_blank"
+																rel="noopener noreferrer" data-auth="NotApplicable"
+																data-safelink="true" data-linkindex="4"
+																data-loopstyle="link" title="http://www.veritran.com/"
+																style="color:blue;text-decoration:underline;">
+																<span lang="en-US"
+																	style="color:#005391;">www.veritran.com</span>
+															</a>
+														</span>
+													</div>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<div id="div1">
+							<h4>PASO 2: Agregar firma en Outlook Web</h4>
+							<div class="row">
+								<ol>
+									<li style="padding: 10px 7px 2px 0">Hacé clic en el botón para copiar la firma:
+										<button id="copy-table-button" data-clipboard-target="#firma">Copiar mi
+											firma</button>
+									</li>
+									<li>Abrí Outlook Web.</li>
+									<li>Seleccioná la imagen del <strong class="ocpUI">engranaje</strong> ubicado en la
+										parte superior derecha de la pantalla <strong
+											class="ocpUI">(Configuración)</strong>.</li>
+									<li>En el buscador <strong class="ocpUI">"Buscar en toda la configuración"</strong>,
+										escribí <strong class="ocpUI">Firma</strong>.</li>
+									<li>Seleccioná la opción <strong class="ocpUI">"Firma de correo
+											electrónico"</strong></li>
+									<li>En en campo de texto, pegá la firma presionando <strong class="ocpUI">Ctrl +
+											V</strong>, y luego hacé click en aceptar</li>
+								</ol>
+								<h5>Recomendamos utilizar la letra “Calibri” para que queden unificadas en todas las
+									firmas de la empresa.</h5>
+							</div>
+							<h4>PASO 2: Agregá la firma en tu Outlook de escritorio</h4>
+							<div class="row">
+								<ol>
+									<li style="padding: 10px 7px 2px 0">Hacé clic en el botón para copiar la firma:
+										<button id="copy-table-button" data-clipboard-target="#firma">Copiar mi
+											firma</button>
+									</li>
+									<li>Abrí Outlook de escritorio.</li>
+									<li>En el menú <strong class="ocpUI">Archivo</strong>, seleccioná <strong
+											class="ocpUI">Correo</strong>.</li>
+									<li>Presionar el botón <strong class="ocpUI">Firmas</strong></li>
+									<li>Presionar el botón que dice <strong class="ocpUI">Nueva</strong>, y en el cuadro
+										que desplega ponerle un nombre a la firma y presionar el botón <strong
+											class="ocpUI">Aceptar</strong>.</li>
+									<li>En el cuadro inferior dice <strong class="ocpUI">Editar Firma</strong>, allí
+										presionar <strong class="ocpUI">Ctrl + V</strong> para pegar tu firma</li>
+									<ol style="list-style-type: circle;">
+										<li>En las listas que figuran a la derecha selecciona en <strong
+												class="ocpUI">Mensajes nuevos</strong> y <strong
+												class="ocpUI">Respuestas o reenvíos</strong> el nombre de la firma que
+											definiste en el punto 5</li>
+									</ol>
+									<li>Presiona el botón <strong class="ocpUI">Aceptar</strong> para guardar tu firma.
+									</li>
+								</ol>
+								<h5>Recomendamos utilizar la letra “Calibri” para que queden unificadas en todas las
+									firmas de la empresa.</h5>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		(function () {
+			new Clipboard('#copy-table-button');
+		})();
+
+		function escribirPuesto(value) {
+			if (value) {
+				document.getElementById('puesto1').innerHTML = " - " + value
+			} else {
+				document.getElementById('puesto1').innerHTML = ""
+			}
+
+		}
+
+		function escribirLabel(target, value) {
+			document.getElementById(target).innerHTML = value
+		}
+
+		function escribirMail(value) {
+			console.log(value)
+			document.getElementById('a-localidad1').href = "mailto:" + value
+			document.getElementById('localidad1').innerHTML = value
+		}
+
+		function escribirTelefono(target, value) {
+			if (value) {
+				document.getElementById(target).innerHTML = "Mobile: " + value
+			} else {
+				document.getElementById(target).innerHTML = ""
+			}
+		}
+
+	</script>
+</body>
+
+</html>
