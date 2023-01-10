@@ -1,43 +1,31 @@
-/* latin-ext */
-@font-face {
-	font-family: 'Monserrat';
-	font-style: italic;
-	font-weight: 100;
-	src: url(/fonts/Montserrat-Italic-VariableFont_wght.ttf) format('ttf');
-  }
-  /* latin */
-  @font-face {
-	font-family: 'Monserrat';
-	font-style: normal;
-	font-weight: 100;
-	src: url(/fonts/Montserrat-VariableFont_wght.ttf) format('ttf');
-  }
 
 body {
-	margin: 0 0 50px 0;
-	font-family: 'Monserrat', sans-serif;
-	font-weight: 400;
+	font-family: 'Montserrat', sans-serif;
+}
+
+html body {
+	font-family: 'Montserrat', sans-serif;
 }
 
 .navbar-default {
 	border-radius: 0;
-    border: none;
-    border-bottom: 1px solid #eee;
-    background-color: #fff;
-    margin-bottom: 10px;
+	border: none;
+	border-bottom: 1px solid #eee;
+	background-color: #fff;
+	margin-bottom: 10px;
 }
 
 #header .navbar-brand {
-    background: url(../img/TecoLogo.png) no-repeat 0px 0px;
-    width: 120px;
-    height: 32px;
-    margin: 15px auto;
+	background: url(../img/TecoLogo.png) no-repeat 0px 0px;
+	width: 120px;
+	height: 32px;
+	margin: 15px auto;
 }
 
 
 @media (max-width: 767px) {
 	#header .navbar-header {
-	    margin-left: 0;
+		margin-left: 0;
 	}
 }
 
@@ -84,20 +72,23 @@ input,
 button {
 	border-radius: 4px
 }
+
 li button {
 	padding: 4px 16px;
-    margin: -2px 5px;
-    border-radius: 50px;
-    border: 1px solid;
+	margin: -2px 5px;
+	border-radius: 50px;
+	border: 1px solid;
 	text-transform: uppercase;
-    transition-duration: .2s;
+	transition-duration: .2s;
 }
+
 li button:hover {
-    border-color: #0055A6;
-    background-color: #0055A6;
-    color: #fff;
-    transition-duration: .2s;
+	border-color: #0055A6;
+	background-color: #0055A6;
+	color: #fff;
+	transition-duration: .2s;
 }
+
 .texto2 a {
 	color: #5a595b !important;
 	text-decoration: none !important;
@@ -268,6 +259,3 @@ input[type=button]#copy1 {
 	height: 100px;
 	border: 1px solid #ccc;
 }
-
-
-  
